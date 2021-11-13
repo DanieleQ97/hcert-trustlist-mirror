@@ -38,7 +38,7 @@ jobs:
         run: npm install
       - name: run script to get trustlist IT
         run: node fetch_certificates.js
-      - name: create minified version
+      - name: create minified versions
         run: python ../minify.py ../../trustlist_it.json
       - uses: EndBug/add-and-commit@v7
         with:
